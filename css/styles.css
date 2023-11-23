@@ -120,7 +120,6 @@ color: #404bbf;
 .page-navigation {
             margin-right: auto;
             display: flex;
-            column-gap: 110px;
             align-items: center;
         }
 
@@ -132,8 +131,8 @@ color: #404bbf;
 .menu-link {
     display: block;
     padding: 24px 0;
-
 }
+
 
 .menu-item:last-child {
     margin-right: 0;
@@ -220,7 +219,17 @@ background-color: #404BBF;
     background-color:  #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url(../images/people-office\ .jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1440px;
+        margin: 0 auto;
 }
+
+
 
 /*=====================second-block====================*/
 
@@ -243,6 +252,18 @@ background-color: #404BBF;
 
 .advantages .advantages-item:last-child {
     margin-right: 0;
+}
+
+.icon-blok {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background:  #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 
@@ -277,19 +298,56 @@ margin-right: 24px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
 
   .item-text-team {
       text-align: center;
+      margin-bottom: 8px;
   }
 
   .team-container-text {
       padding-top: 32px;
       padding-bottom: 32px;
       background: #FFF;
+     
       
   }
+  
+  
+  .menu-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    list-style-type: none;
+  }
 
+ .menu-social-link-item .social-link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+ }
+
+ .social-link-item{
+    fill: #F4F4FD;
+ }
+
+ .social-link-item:hover, .social-link-item:focus {
+background-color: #404BBF;
+ }
+
+  .menu-social-link-item {
+    width: 40px;
+    height: 40px;
+    
+   
+
+  }
 /*====================fourth-block========================*/
 
 .portfolio {
@@ -306,7 +364,46 @@ margin-right: 24px;
 
    .portfolio-item {
     width: calc((100% - 5*24)/6);
+   
    }
+
+   .portfolio-box {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+   }
+
+   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #4D5AE5;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+transform: translateY(0);
+border: 1px solid #E7E9FC;
+}
+
+.portfolio-item:hover {
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.overlay-text {
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-bottom: 164px;
+    padding-right:32 ;
+    color: #F4F4FD;
+}
+
 
 /*====================footer========================*/
 
