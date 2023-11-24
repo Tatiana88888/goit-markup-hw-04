@@ -133,8 +133,7 @@ color: #404bbf;
 .menu-link {
     display: block;
     padding: 24px 0;
-    
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .menu-link.current {
@@ -246,6 +245,7 @@ background-color: #404BBF;
         url(../images/office.jpg);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
         max-width: 1440px;
         margin: 0 auto;
 }
@@ -410,10 +410,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
 .overlay {
     display: inline-block;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-bottom: 164px;
-    padding-right:32 ;
+    padding: 40px 32px;
     color: #f4f4fd;
     font-size: 16px;
     line-height: 1.5;
